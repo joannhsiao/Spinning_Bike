@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1771628297154370
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4202308301541654}
+  - component: {fileID: 114232146836367254}
+  m_Layer: 0
+  m_Name: SpawnerTraffic
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4202308301541654
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771628297154370}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0.778, y: 0.1505, z: 0.0009999871}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114232146836367254
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1771628297154370}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 08f95c56b77e63f47914eeee80561ebc, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  SpawnDistance: 20
+  DestructDistance: 10
+  speedThreshold: 8
+  DestructAxis: 2
+  spawnTimeSecondMin: 1
+  spawnTimeSecondMax: 3
+  spawnableItems:
+  - itemName: Car1
+    itemTransform: {fileID: 4097028617005838, guid: f2d109c8a1f284b4699545b0fc15ff2f,
+      type: 3}
+    spawnYAlign: 0.234
+    SpawnChance: 0.5
+  - itemName: Car2
+    itemTransform: {fileID: 4097028617005838, guid: 82f2f91d7bfdef145a1adaccc951b9cb,
+      type: 3}
+    spawnYAlign: 0.234
+    SpawnChance: 0.1
+  - itemName: Car3
+    itemTransform: {fileID: 4097028617005838, guid: 33820781f7ff3b145a31acb2fd42bf9d,
+      type: 3}
+    spawnYAlign: 0.234
+    SpawnChance: 0.4
+  - itemName: Car4
+    itemTransform: {fileID: 4097028617005838, guid: e71c7e6d6e69987429b12f08e223074f,
+      type: 3}
+    spawnYAlign: 0.234
+    SpawnChance: 0.7
